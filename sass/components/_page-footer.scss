@@ -11,6 +11,7 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -83,9 +84,9 @@
 
 // Подписка
 
-.subscribe {
-  margin-left: auto;
-}
+// .subscribe {
+//   margin-left: auto;
+// }
 
 .subscribe__title {
   margin-bottom: 20px;
