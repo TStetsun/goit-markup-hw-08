@@ -11,7 +11,13 @@
     justify-content: center;
   }
   @media screen and (min-width: $desktop) {
+    gap: 0;
     margin-bottom: 50px;
+  }
+}
+.filter__item + .filter__item {
+  @media screen and (min-width: $desktop) {
+    margin-left: 8px;
   }
 }
 

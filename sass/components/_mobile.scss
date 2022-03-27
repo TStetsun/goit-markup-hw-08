@@ -108,13 +108,20 @@
   flex-wrap: wrap;
 }
 
-.mobile-socials-item:not(:last-child)::after {
-  content: '';
+.mobile-socials-item + .mobile-socials-item {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
   display: inline;
-  margin: 0 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(-90deg);
 }
+
+// .mobile-socials-item:not(:last-child)::after {
+//   content: '';
+//   display: inline;
+//   margin: 0 10px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   transform: rotate(-90deg);
+// }
 
 .mobile-socials-link {
   text-decoration: none;
@@ -124,3 +131,7 @@
   letter-spacing: 0.02em;
   color: $accent-color;
 }
+
+// .mobile-contacts-wrap {
+//   display: flex;
+// }

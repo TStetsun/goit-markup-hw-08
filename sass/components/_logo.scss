@@ -10,9 +10,13 @@
   &__header {
     @media screen and (min-width: $tablet) and (max-width: calc(#{$desktop} - 1px)) {
       margin-right: 88px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
     @media screen and (min-width: $desktop) {
       margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
   &__footer {

@@ -126,6 +126,14 @@
       margin-right: 50px;
     }
   }
+  @media screen and (max-width: calc(#{$desktop} - 1px)) {
+    &:first-child {
+      padding-top: 20px;
+    }
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .contacts__link {
@@ -144,6 +152,11 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
