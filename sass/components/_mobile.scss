@@ -30,9 +30,9 @@
 
   transform: translateX(101%);
   animation: opening;
-  animation-duration: 500ms;
+  animation-duration: 300ms;
   animation-timing-function: linear;
-  animation-delay: 200ms;
+  animation-delay: 100ms;
   animation-fill-mode: forwards;
 }
 
@@ -40,9 +40,9 @@
   0% {
     transform: translateX(100%);
   }
-  50% {
-    transform: translateX(50%);
-  }
+  // 50% {
+  //   transform: translateX(50%);
+  // }
   100% {
     transform: translateX(0%);
   }
