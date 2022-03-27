@@ -1,17 +1,23 @@
 // Мобильное меню
 .mobile-menu {
-  display: none;
+  // display: none;
   overflow: hidden;
+  position: fixed;
+  opacity: 0;
+  transform: translateX(101%);
+  transition: opacity 500ms, transform 250ms ease-in;
 
   &.is-open {
-    display: block;
-    position: absolute;
+    // display: block;
+    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow-y: auto;
     z-index: 2;
+    opacity: 1;
+    transform: translateX(0%);
 
     background-color: $secondary-text-color;
 
@@ -28,25 +34,25 @@
   height: 100%;
   justify-content: space-between;
 
-  transform: translateX(101%);
-  animation: opening;
-  animation-duration: 300ms;
-  animation-timing-function: linear;
-  animation-delay: 100ms;
-  animation-fill-mode: forwards;
+  // transform: translateX(101%);
+  // animation: opening;
+  // animation-duration: 300ms;
+  // animation-timing-function: linear;
+  // animation-delay: 100ms;
+  // animation-fill-mode: forwards;
 }
 
-@keyframes opening {
-  0% {
-    transform: translateX(100%);
-  }
-  // 50% {
-  //   transform: translateX(50%);
-  // }
-  100% {
-    transform: translateX(0%);
-  }
-}
+// @keyframes opening {
+//   0% {
+//     transform: translateX(100%);
+//   }
+//   // 50% {
+//   //   transform: translateX(50%);
+//   // }
+//   100% {
+//     transform: translateX(0%);
+//   }
+// }
 
 .mobile-main-menu__item {
   &:not(:last-child) {
